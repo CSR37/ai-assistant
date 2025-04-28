@@ -46,7 +46,7 @@ function App() {
 
       conversation.push({ role: 'user', content: question });
 
-      const response = await axios.post('http://localhost:5000/ask', { conversation });
+      const response = await axios.post('https://ai-assistant-izok.onrender.com/ask', { conversation });
 
       let aiReplyRaw = response.data.reply;
 
